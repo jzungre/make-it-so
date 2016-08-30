@@ -3,6 +3,7 @@ angular.module('makeitso.home', [])
 	.controller('homeController', function($scope, $http){
 		
 		$scope.data = [];
+		$scope.pledges;
 
 		$scope.getBounties = function(){
 			console.log("getBounties() called!!!!")
@@ -22,10 +23,27 @@ angular.module('makeitso.home', [])
 			}).error(function(error){
 				console.log(error);
 
-			})		
+			})
 		}	
 
-		
+		// $scope.getPledgeTotal = function(projID){
+		// 	console.log("gettin' those pledges, booooy!")
+
+		// 	$http({
+		// 		'method': 'GET',
+		// 		'url': '/pledges',
+		// 		'Content-Type': 'application/json'
+		// 	})
+		// 	.success(function(response){
+		// 		console.log('Pledges!!!!!!!!: ', response);
+
+
+		// 	}).error(function(error){
+		// 		console.log(error);
+
+		// 	})
+
+		// }
 
 
 	})
