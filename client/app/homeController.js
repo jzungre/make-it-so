@@ -23,6 +23,17 @@ angular.module('makeitso.home', [])
 				console.log(error);
 
 			})		
+		}
+
+		$scope.editBounty = function(){
+
+			$http({
+				
+
+
+			})
+
+
 		}	
 
 		
